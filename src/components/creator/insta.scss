@@ -1,0 +1,23 @@
+@import "../../sass/variables";
+.creator {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+  height: 100vh;
+  @include responsive(phone) {
+    display: block;
+    padding: 3rem 0.8rem;
+    height: unset;
+  }
+}
+
+.creator > div:nth-child(1) {
+}
+
+.creator img {
+  width: 26rem;
+  @include responsive(phone) {
+    width: 80%;
+  }
+}

@@ -1,0 +1,57 @@
+@import "../../sass/variables";
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  @include responsive(phone) {
+    display: block;
+    padding: 3rem 0.8rem;
+    height: unset;
+  }
+}
+
+.social img {
+  width: 26rem;
+  @include responsive(phone) {
+    width: 80%;
+  }
+}
+
+.social a {
+  text-decoration: none;
+}
+
+.social i {
+  font-size: 2.5rem;
+}
+.social-container {
+  flex: 0.7;
+}
+
+.email {
+  margin-top: 2rem;
+}
+
+.social-icon {
+  display: flex;
+  margin: 2rem 0;
+  justify-content: space-between;
+}
+
+.social-media-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.arrow {
+  position: absolute;
+  width: 30%;
+  left: 30%;
+}

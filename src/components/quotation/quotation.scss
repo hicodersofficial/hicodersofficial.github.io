@@ -1,0 +1,48 @@
+@import "../../sass/variables";
+
+.quotation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  @include responsive(phone) {
+    display: block;
+    padding: 3rem 0.8rem;
+    height: unset;
+  }
+}
+
+.quotation div:nth-child(1) {
+  flex: 1;
+}
+
+.quotation div:nth-child(2) {
+  flex: 1.2;
+  text-align: right;
+}
+
+.quotation img {
+  width: 26rem;
+  @include responsive(phone) {
+    width: 80%;
+  }
+}
+
+.quotation p {
+  display: flex;
+  align-items: center;
+  margin: 1.5rem 0;
+}
+.quotation p span {
+  padding: 0.2rem;
+  margin-right: 1rem;
+  border: 3px solid #c4c4c4;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}

@@ -1,0 +1,79 @@
+@import "../../sass/variables";
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  @include responsive(phone) {
+    display: block;
+    padding: 3rem 0.8rem;
+    height: unset;
+  }
+}
+
+.contact form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.contact img {
+  width: 37rem;
+  @include responsive(phone) {
+    width: 80%;
+  }
+}
+
+.contact form input,
+.contact form textarea {
+  padding: 0.9rem;
+  display: block;
+  border: none;
+  font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  margin: 1.4rem 0;
+  background: #092b48;
+  outline: none;
+  color: $text-color;
+  font-weight: 500;
+  max-width: 100%;
+}
+
+.contact form input,
+.contact form textarea,
+.contact form button {
+  width: 78%;
+}
+
+::placeholder {
+  color: #2e5b81;
+  opacity: 1; /* Firefox */
+}
+
+.contact form textarea {
+  min-height: 160px;
+}
+
+.contact form button {
+  padding: 0.7rem;
+  background-color: $primary-color;
+  font-weight: 600;
+  color: $text-color;
+  font-size: 1.2rem;
+  border: none;
+  outline: none;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+}

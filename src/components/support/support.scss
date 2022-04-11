@@ -1,0 +1,71 @@
+@import "../../sass/variables";
+
+.support {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+  height: 100vh;
+  @include responsive(phone) {
+    display: block;
+    padding: 3rem 0.8rem;
+    height: unset;
+  }
+}
+
+.support img.illu {
+  width: 26rem;
+  @include responsive(phone) {
+    width: 80%;
+  }
+}
+
+.merch {
+  display: flex;
+  justify-content: space-between;
+}
+
+.merch img {
+  margin: 2rem;
+  height: 10rem;
+  @include responsive(phone) {
+    margin: 1rem;
+    height: 5rem;
+  }
+}
+.merch img:last-child {
+  margin-right: 0;
+}
+
+.donate {
+  text-align: center;
+}
+
+.line {
+  border-top: 2px solid #ff0066;
+  width: 8rem;
+}
+
+.or-text {
+  padding: 0 1rem;
+}
+.or {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.paypal {
+  background-color: #0066ff;
+  border: none;
+  padding: 0.8rem 4rem;
+  margin: 1rem;
+  color: $text-color;
+  font-weight: 600;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+}

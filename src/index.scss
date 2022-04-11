@@ -1,0 +1,58 @@
+@import "./sass/variables";
+
+::selection {
+  background-color: $primary-color;
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(211, 211, 211);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif, "Segoe UI", Tahoma, Geneva, Verdana,
+    sans-serif;
+  background: $primary-background;
+  color: $text-color;
+  overflow-x: hidden;
+}
+
+li {
+  list-style: none;
+}
+
+p,
+a,
+span,
+small,
+strong,
+b,
+li {
+  color: $light-text-color;
+}
+
+p,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding-inline-start: 0px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}

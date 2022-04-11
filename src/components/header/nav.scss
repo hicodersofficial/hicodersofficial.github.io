@@ -1,0 +1,38 @@
+@import "../../sass/variables";
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 3rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  align-items: center;
+  backdrop-filter: blur(19px);
+  transition: all 0.2s ease-in-out;
+  z-index: 9999999;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  @include responsive(phone) {
+    display: none;
+  }
+}
+
+.nav .logo {
+  width: 40px;
+  height: 40px;
+}
+
+.nav ul {
+  display: flex;
+}
+
+.nav ul li {
+  padding: 0 1rem;
+}
+
+.nav ul li:last-child {
+  padding-right: 0;
+}
